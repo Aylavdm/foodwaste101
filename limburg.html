@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="dropdown.js"></script>
     <title>Limburg | Foodwaste 101</title>
 </head>
 <body>
     <header>
-        <a class="logoContainer" href="index.html"><img class="logo" src="images/logo.png"></a>
-        <nav>
+        <div class="hamburgerHeader"><a class="logoContainer" href="index.html"><img class="logo" src="images/logo.png"></a>
+            <div class="hamburgerIcon"><i id="hamburgerIcon" class="fa fa-bars"></i></div>
+        </div>
+        <nav id="navigationDesktop">
                 <li class="nav"><a href="index.html">Home</a></li>
                 <li class="nav"><div class="dropdown"><a href="info.html">Info</a>
                 <div class="dropdown-content">
@@ -36,9 +41,38 @@
                         <a href="bewaartechnieken.html" class="drop">Bewaartechnieken</a>
                     </div>
                 </div></li>
-                <li class="nav"><a href="#">Bronnenlijst</a></li>
+                <li class="nav"><a href="bronnenlijst.html">Bronnenlijst</a></li>
         </nav>
     </header>
+    <nav id="navigationMobile">
+        <li class="nav"><a href="index.html">Home</a></li>
+        <li class="nav">
+            <div class="dropdown"><a href="info.html">Info</a><div class="arrowDownIcon" id="infoDrop">&blacktriangledown;</div></div>
+        <div class="dropdown-content" id="infoContent">
+            <a href="oorzaken&gevolgen.html" class="drop">Oorzaken & Gevolgen</a>
+            <a href="oorzaken.html" class="drop">Oorzaken</a>
+            <a href="tgt&tht.html" class="drop">TGT & THT</a>
+            <a href="gevolgen.html" class="drop">Gevolgen</a>
+            <a href="cijfers&statistieken.html" class="drop">Cijfers & Statistieken</a>
+        </div></li>
+        <li class="nav"><div class="dropdown"><a href="initiatieven.html">Initiatieven</a><div class="arrowDownIcon" id="initiatievenDrop">&blacktriangledown;</div></div>
+            <div class="dropdown-content" id="initiatievenContent">
+                <a href="westvlaanderen.html" class="drop">West-Vlaanderen</a>
+                <a href="oostvlaanderen.html" class="drop">Oost-Vlaanderen</a>
+                <a href="antwerpen.html" class="drop">Antwerpen</a>
+                <a href="limburg.html" class="drop">Limburg</a>
+                <a href="vlaamsbrabant.html" class="drop">Vlaams-Brabant</a>
+                <a href="brussel.html" class="drop">Brussel</a>
+        </div></li>
+        <li class="nav"><div class="dropdown"><a href="tips&tricks.html">Tips & Tricks</a><div class="arrowDownIcon" id="tipstricksDrop">&blacktriangledown;</div></div>
+            <div class="dropdown-content" id="tipstricksContent">
+                <a href="bedrijven.html" class="drop">Bedrijven</a>
+                <a href="athome.html" class="drop">@ Home</a>
+                <a href="recepten.html" class="drop">Recepten</a>
+                <a href="bewaartechnieken.html" class="drop">Bewaartechnieken</a>
+        </div></li>
+        <li class="nav"><a href="bronnenlijst.html">Bronnenlijst</a></li>
+</nav>
     
     <div class="bodyContent">
         <h5 class="titel">Limburg</h5>
