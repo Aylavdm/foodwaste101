@@ -87,6 +87,10 @@ h5 {
     width: 90%;
 }
 
+h6 {
+    font-size:large;
+}
+
 @media screen and (min-width: 600px) {
     nav {
         display: flex;
